@@ -3,6 +3,11 @@ import benchmark
 
 app = Flask(__name__)
 
+@app.route('/test')
+def hello():
+    print('Hello!  Flask Server is running.')
+    return('Hello!  Flask Server is running.')
+
 @app.route('/')
 def root():
     return('FLASK SERVER')
