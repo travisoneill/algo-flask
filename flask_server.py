@@ -1,5 +1,5 @@
-from flask import Flask, request, json, jsonify
 import benchmark
+from flask import Flask, request, json, jsonify
 
 app = Flask(__name__)
 

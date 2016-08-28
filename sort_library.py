@@ -1,26 +1,20 @@
-# def ps():
-#     return '''def python_sort(arr):
-#     arr.sort()'''
-#
-# def test():
-#     return '''def test_func(arr):
-#     arr.sort()
-#     print(arr)
-#     return arr'''
+def python_sort():
+    return '''def python_sort(arr):
+    arr.sort()'''
 
-def bubble_sort(arr, done=False):
-    """bubble_sort(arr, done=False)
-         Sorts array. Iterative. Time: O(N^2), space: O(1)"""
+
+def bubble_sort():
+    return '''def bubble_sort(arr, done=False):
     while done == False:
         done = True
         for idx, num in enumerate(arr[0:-1]):
             if num > arr[idx+1]:
                 arr[idx], arr[idx+1] = arr[idx+1], arr[idx]
                 done = False
-    return arr
+    return arr'''
 
-def merge_sort(arr):
-    """Sorts array. Recursive. O(NlogN) time, O(N) space"""
+def merge_sort():
+    return '''def merge_sort(arr):
     def merge(arr1, arr2):
         arr1, arr2 = deque(arr1), deque(arr2)
         merged = []
@@ -35,4 +29,15 @@ def merge_sort(arr):
     mid = len(arr) // 2
     left = arr[0:mid]
     right = arr[mid:]
-    return merge(merge_sort(left), merge_sort(right))
+    return merge(merge_sort(left), merge_sort(right))'''
+
+# def counting_sort(arr):
+#     min, max = arr[0]
+#     map = {}
+#     for n in arr:
+#         count = map.get(n, default=0)
+#         count += 1
+#         if n > max:
+#             max = n
+#         in n < min:
+#             min = n 
