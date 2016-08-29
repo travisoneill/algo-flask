@@ -1,8 +1,6 @@
 import sort_library
-# import ast
-# import code
 from math import log10
-# from statistics import stdev, mean
+from statistics import stdev, mean
 from collections import deque, defaultdict
 from time import time
 from random import randint, randrange
