@@ -85,7 +85,7 @@ def heap_sort(arr, last=None):
         last = last or len(arr)-1
         def value(idx):
             if idx <= last: return arr[idx]
-        else: return -float('inf')
+            else: return -float('inf')
         def left(idx):
             return 2 * idx + 1
         def right(idx):
