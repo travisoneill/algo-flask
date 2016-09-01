@@ -1,5 +1,5 @@
 import sort_library
-from math import log10, inf
+# from math import log10, inf
 from statistics import stdev, mean
 from collections import deque, defaultdict
 from time import time
