@@ -23,4 +23,7 @@ def run():
     return jsonify(response_data)
 
 if __name__ == "__main__":
-    app.run(port=int('8002'))
+    # local
+    # app.run(port=int('8002'))
+    #deploy
+    app.run()
